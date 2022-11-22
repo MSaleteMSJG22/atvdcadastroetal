@@ -12,6 +12,12 @@ LISTA_CURSO = [
     ('Curso Técnico', 'Curso Técnico')
 ]
 
+class MiniCurso(models.Model):
+    nome = models.CharField(max_length=150)
+
+    def __str__(self) -> str:
+        return self.nome
+
 class Aluno(models.Model):
     nome = models.CharField(max_length = 150)
     cpf = models.CharField(max_length = 15)
@@ -20,6 +26,7 @@ class Aluno(models.Model):
     endereço = models.CharField(max_length = 150)
     sexo = models.CharField(max_length = 150, choices = LISTA_SEXO)
     curso = models.CharField(max_length = 150, choices = LISTA_CURSO)
+    minicursos = models.ManyToManyField(MiniCurso)
 
     def __str__(self):
         return self.nome
