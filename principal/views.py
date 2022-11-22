@@ -8,6 +8,7 @@ def cadastro_aluno(request):
             form.save()
             form = AlunoForm()
     else:
+        print("----erro")
         form = AlunoForm()
     
     return render(request, 'forms.html', {'form' : form})
