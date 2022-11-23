@@ -1,10 +1,26 @@
+body {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 1200px;
+}
+
 h1{
-    font-size:50px;
-    color: #af2383;
+    font-size:30px;
+    color:#D3455B;
     text-align: center;
 }
 
 button{
-    background-color: #af2383;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right:20px ;
+    margin-left: 1030px;
+    background-color: #6558F5;
+    border-color: #6558F5;
+    border-radius: 5px;
+    font-size: 18px;
+    color:white;
     
 }
+
